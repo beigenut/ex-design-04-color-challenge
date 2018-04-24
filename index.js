@@ -1,4 +1,4 @@
-/* boxes -> options */
+/* boxes -> options  box -> question */
 
 
 function randColor() {
@@ -35,24 +35,37 @@ function newStage() {
 /* answer 에는 0, 1, 2 배열, 3가지 중에서 정답으로 저장되어 있는 애랑 같으면 */
 options.forEach((el, index) => {
   el.addEventListener('click', () => {
+    el.classList.add('large')
     if(answer === index){
-      alert("!!! that's correct")
+//      alert("!!! that's correct")
       document.querySelector('.modal.right').classList.add('show')
       score++;
     }
     else{
-      alert("that's not correct") 
+//      alert("that's not correct") 
       document.querySelector('.modal.wrong').classList.add('show')
       score = 0;
     }
     document.querySelector('.js__score').textContent = score;
-    newStage();
   })
 })
 
 document.querySelector('.js__close').addEventListener('click', () => {
-  document.querySelector('.modal.wrong').classList.remove('show')
+  newStage();
+//  setTimeout(newStage(), 1000);
+  options.forEach(el => {
+    el.classList.remove('large')
+  })  
   document.querySelector('.modal.right').classList.remove('show')
+})
+
+document.querySelector('.js__close2').addEventListener('click', () => {
+  newStage();
+//  setTimeout(newStage(), 1000);
+  options.forEach(el => {
+    el.classList.remove('large')
+  })  
+  document.querySelector('.modal.wrong').classList.remove('show')
 })
 
 

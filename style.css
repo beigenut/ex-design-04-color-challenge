@@ -7,6 +7,7 @@
   width: 100vw;
   height: 100vh;
   background-color: antiquewhite; 
+  overflow: hidden;
 }
 
 section {
@@ -28,6 +29,11 @@ section {
   height: 60px;
   list-style: none;
   cursor: pointer;
+  transition: transform 1s;
+}
+
+.circle.large {
+  transform: scale(30);
 }
 
 
@@ -45,20 +51,40 @@ section {
 }
 
 .js__score {
-  padding: 20px;
-  background-color: darkslateblue;
-  text-align: center;
+  padding-left: 5px;
 }
 
 .modal {
   display: none;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .modal.show {
   display: block;
 }
 
+.span__modal-text {
+  color: #fff;
+  display: block;
+  text-align: center;
+  font-size: 2rem;
+}
+
 .div__score {
   color: #fff;
   font-size: 1.4rem;
+  text-align: center;
+}
+
+.close {
+  display: block;
+  padding: 10px;
+  width: 120px;
+  height: 30px;
+  border: 1px solid #fff;
+  text-align: center;
 }

@@ -9,9 +9,12 @@
  <div class="container">
    <section>
     <div class="div__color-code">
-      <span class="js__question span__question"></span>
-      Current score :
-      <div class="js__score div__score"></div>
+      <span class="span__question js__question"></span>
+      
+      <div class="div__score">
+        Current score :
+        <span class="js__score">0</span>
+      </div>
       <div class="div__color-question">
         <ul class="ul__circle">
           <li class="circle"></li>
@@ -19,8 +22,19 @@
           <li class="circle"></li>
         </ul>
       </div>
+      
+      <div class="modal right">
+        <span class="span__modal-text">THAT'S RIGHT!</span>
+        <div class="close js__close">NEXT</div>
+      </div>
+      
+      <div class="modal wrong">
+        <span class="span__modal-text">THAT'S NOT CORRECT!</span>
+        <div class="close js__close2">START AGAIN</div>
+      </div>
+      
     </div>
-    </section>
+  </section>
 </div>
   
   <script src="./index.js"></script>
