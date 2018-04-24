@@ -7,35 +7,42 @@
 </head>
 <body>
  <div class="container">
-   <section>
-    <div class="div__color-code">
-      <span class="span__question js__question"></span>
-      
-      <div class="div__score">
-        Current score :
-        <span class="js__score">0</span>
+   <section class="first">
+      <div class="row">
+       <span class="title">THE GREAT <span class="big-title">RGB</span>GUESSING CHALLENGE</span>
       </div>
-      <div class="div__color-question">
-        <ul class="ul__circle">
-          <li class="circle"></li>
-          <li class="circle"></li>
-          <li class="circle"></li>
-        </ul>
+   </section>
+   <section class="second">
+      <div class="row">
+        <div class="div__score">
+          <span class="score-text">Current score : </span>
+          <span class="score-text js__score">0</span>
+        </div>
       </div>
-      
-      <div class="modal right">
-        <span class="span__modal-text">THAT'S RIGHT!</span>
-        <div class="close js__close">NEXT</div>
+      <div class="row middle">
+        <div class="div__color-code">
+          <span class="js__question span__question"></span>
+          <ul class="ul__circle">
+            <li class="circle"></li>
+            <li class="circle"></li>
+            <li class="circle"></li>
+          </ul>
+        </div>
       </div>
-      
-      <div class="modal wrong">
-        <span class="span__modal-text">THAT'S NOT CORRECT!</span>
-        <div class="close js__close2">START AGAIN</div>
+      <div class="row">
+        <div class="modal right">
+          <span class="span__modal-text">THAT'S RIGHT!</span>
+          <div class="close js__close"><span>NEXT</span></div>
+        </div>
       </div>
-      
-    </div>
-  </section>
-</div>
+      <div class="row">
+        <div class="modal wrong">
+          <span class="span__modal-text">THAT'S NOT CORRECT!</span>
+          <div class="close js__close2"><span>START AGAIN</span></div>
+        </div>
+      </div>
+   </section>
+  </div>  
   
   <script src="./index.js"></script>
 </body>

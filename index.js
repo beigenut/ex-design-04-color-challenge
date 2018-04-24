@@ -51,21 +51,22 @@ options.forEach((el, index) => {
 })
 
 document.querySelector('.js__close').addEventListener('click', () => {
-  newStage();
-//  setTimeout(newStage(), 1000);
+
+//  setTimeout(newStage(), 2000);
   options.forEach(el => {
     el.classList.remove('large')
   })  
   document.querySelector('.modal.right').classList.remove('show')
+  newStage();
 })
 
 document.querySelector('.js__close2').addEventListener('click', () => {
-  newStage();
-//  setTimeout(newStage(), 1000);
+//  setTimeout(newStage(), 2000);
   options.forEach(el => {
     el.classList.remove('large')
   })  
   document.querySelector('.modal.wrong').classList.remove('show')
+  newStage();
 })
 
 

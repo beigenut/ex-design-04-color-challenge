@@ -6,27 +6,52 @@
 .container {
   width: 100vw;
   height: 100vh;
-  background-color: antiquewhite; 
+  background-color: #232323; 
   overflow: hidden;
 }
 
 section {
-  width: 600px;
+  width: 100%;
+}
+
+.first {
+  background-color: steelblue;
+}
+
+.row {
+  min-width: 360px;
+  width: 70%;
   margin: 0 auto;
+}
+
+.title {
+  display: block;
+  padding: 3% 0;
+  font-size: 1.2rem;
+  text-align: center;
+  color: #fff;
+  font-weight: 200;
+}
+
+.big-title {
+  font-size: 3.2rem;
+  display: inline-block;
+  width: 100%;
+  vertical-align: top;
+  margin: -10px 0;
 }
 
 .ul__circle{
   display: flex;
   padding: 40px 20px;
   justify-content: center;
-  background-color: #fff;
 }
 
 .circle {
-  margin: 0 30px;
+  margin: 0 10px;
   border-radius: 100px;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   list-style: none;
   cursor: pointer;
   transition: transform 1s;
@@ -36,29 +61,34 @@ section {
   transform: scale(30);
 }
 
-
-.div__color-code {
-  padding: 50px 50px;
+.middle {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 48%;
+/*  transform: translateY(-50%);*/
 }
 
 .span__question {
-  background-color: darkblue;
-  padding: 20px 30px;
   display: block;
   text-align: center;
+  font-size: 2rem;
   color: #fff;
-  font-size: 1.4rem;
 }
 
-.js__score {
-  padding-left: 5px;
+.score-text {
+  font-size: 1.1rem;
+  font-weight: 200;
+  display: inline-block;
+  vertical-align: top;
+  line-height: 30px;
 }
 
 .modal {
   display: none;
   position: fixed;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 40%;
+/*  transform: translateY(-50%);*/
   left: 50%;
   transform: translateX(-50%);
 }
@@ -71,20 +101,29 @@ section {
   color: #fff;
   display: block;
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  font-weight: 700;
 }
 
 .div__score {
   color: #fff;
   font-size: 1.4rem;
   text-align: center;
+  padding: 5px 0;
 }
 
 .close {
   display: block;
-  padding: 10px;
-  width: 120px;
-  height: 30px;
-  border: 1px solid #fff;
+  border: 2px solid #fff;
   text-align: center;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.close > span {
+  color: #fff;
+  display: block;
+  padding: 10px 10px;
+  font-weight: 700;
 }
