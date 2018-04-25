@@ -54,11 +54,11 @@ section {
   height: 50px;
   list-style: none;
   cursor: pointer;
-  transition: transform 1s;
+  transition: transform 0.5s;
 }
 
 .circle.large {
-  transform: scale(30);
+  transform: scale(40);
 }
 
 .middle {
